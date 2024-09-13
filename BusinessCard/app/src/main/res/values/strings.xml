@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Business Card</string>
+    <string name="title_text">Android Developer Extraordinaire</string>
+    <string name="name_text">Vu Ninh Giang</string>
+    <string name="phone_text">(+84)0819606204</string>
+    <string name="descrip_text">\@AndroidDEV</string>
+    <string name="email_text">22028261@vnu.edu.vn</string>
+</resources>
