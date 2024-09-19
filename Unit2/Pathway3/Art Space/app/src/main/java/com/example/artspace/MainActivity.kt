@@ -22,6 +22,7 @@ import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.MaterialTheme
@@ -39,8 +40,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.example.artspace.ui.theme.ArtSpaceTheme
 
 class MainActivity : ComponentActivity() {
@@ -61,20 +64,31 @@ class MainActivity : ComponentActivity() {
 
 fun ArtSpaceLayout() {
     var res by remember { mutableStateOf(0) }
-    val result = res % 4
-//    val imageResource = when (result) {
-//        0 -> R.drawable.mona_lisa
-//        1 -> R.drawable.lemon_squeeze
-//        2 -> R.drawable.lemon_drink
-//        3 -> R.drawable.lemon_restart
-//        else -> R.drawable.lemon_tree
-//    }
-
+    val result = res % 3
+    val imageResource = when (result) {
+        0 -> R.drawable.mona_lisa
+        1 -> R.drawable.starry_night_over_the_rhone
+        2 -> R.drawable.van_gogh___starry_night___google_art_project
+        else -> R.drawable.mona_lisa
+    }
+    val nameResource = when (result) {
+        0 -> "Mona Lisa"
+        1 -> "Starry Night Over the Rhône"
+        2 -> "The Starry Night"
+        else -> "Mona Lisa"
+    }
+    val artistResource = when (result) {
+        0 -> "Leonardo Da Vinci (1503–1506)"
+        1 -> "Vincent van Gogh (1888)"
+        2 -> "Vincent van Gogh (1889)"
+        else -> "Leonardo Da Vinci (1503–1506)"
+    }
     Column(
         modifier = Modifier
             .fillMaxSize()
             .padding(16.dp)
             .verticalScroll(rememberScrollState()),
+
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceBetween
     ) {
@@ -84,6 +98,7 @@ fun ArtSpaceLayout() {
                 .weight(1f)
                 .wrapContentSize()
                 .padding(16.dp)
+                .background(color = Color(0xFFF5FAFA))
                 .shadow(elevation = 8.dp, shape = RectangleShape)
 
 
@@ -98,7 +113,7 @@ fun ArtSpaceLayout() {
             ) {
 
                 Image(
-                    painter = painterResource(id = R.drawable.van_gogh___starry_night___google_art_project),
+                    painter = painterResource(imageResource),
                     contentDescription = null,
                     contentScale = ContentScale.Fit,
                     modifier = Modifier.fillMaxSize()
@@ -109,20 +124,31 @@ fun ArtSpaceLayout() {
 
         }
 
-        Spacer(modifier = Modifier.height(16.dp))
-
-
-        Column(
-            horizontalAlignment = Alignment.CenterHorizontally
+        Box(
+            modifier = Modifier
+                .wrapContentSize().background(color = Color(0xFFC1DAD6))
         ) {
-            Text(
-                text = "Artwork Title",
-                style = MaterialTheme.typography.titleLarge
-            )
-            Text(
-                text = "Artwork Artist (Year)",
-                style = MaterialTheme.typography.bodyMedium
-            )
+            Spacer(modifier = Modifier.height(16.dp))
+
+
+            Column(
+                horizontalAlignment = Alignment.CenterHorizontally,
+                modifier = Modifier.padding(16.dp)
+            ) {
+                Text(
+                    text = nameResource,
+                    style = MaterialTheme.typography.titleLarge,
+                    color = Color.Black.copy(alpha = 0.7f),
+                    fontSize = 20.sp,
+                    fontWeight = FontWeight.Bold
+                )
+                Text(
+                    text = artistResource,
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = Color.Black.copy(alpha = 0.7f),
+                    fontSize = 16.sp
+                )
+            }
         }
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -132,10 +158,20 @@ fun ArtSpaceLayout() {
             modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceBetween
         ) {
-            Button(onClick = {  }) {
+            Button(
+                onClick = { res-- },
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFF6D929B),
+                )
+            ) {
                 Text("Previous")
             }
-            Button(onClick = { }) {
+            Button(
+                onClick = { res++ },
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color(0xFF6D929B)
+                )
+            ) {
                 Text("Next")
             }
         }
