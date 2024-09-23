@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">30 Day Of Productivity</string>
+    <string name="day_title_1">Set Clear Goals</string>
+    <string name="day_description_1">Establish SMART goals for clear direction.</string>
+
+    <string name="day_title_2">Use the Pomodoro Technique</string>
+    <string name="day_description_2">Work for 25 minutes, then take a 5-minute break.</string>
+
+    <string name="day_title_3">Create a Daily To-Do List</string>
+    <string name="day_description_3">List tasks each morning to track progress.</string>
+
+    <string name="day_title_4">Prioritize Important Tasks</string>
+    <string name="day_description_4">Focus on the 20% of tasks that yield 80% of results.</string>
+
+    <string name="day_title_5">Minimize Distractions</string>
+    <string name="day_description_5">Eliminate distractions to improve focus.</string>
+
+    <string name="day_title_6">Organize Your Workspace</string>
+    <string name="day_description_6">Keep your workspace clean for better efficiency.</string>
+
+    <string name="day_title_7">Use Time Management Tools</string>
+    <string name="day_description_7">Use tools like Trello or Notion for task management.</string>
+
+    <string name="day_title_8">Leverage Your Morning Routine</string>
+    <string name="day_description_8">Start your day with healthy habits to boost mood.</string>
+
+    <string name="day_title_9">Plan Your Week in Advance</string>
+    <string name="day_description_9">Plan weekly to stay organized and reduce stress.</string>
+
+    <string name="day_title_10">Break Down Large Tasks</string>
+    <string name="day_description_10">Divide big tasks into smaller, manageable steps.</string>
+
+    <string name="day_title_11">Find Your Peak Productivity Time</string>
+    <string name="day_description_11">Identify when you\'re most productive and schedule work accordingly.</string>
+
+    <string name="day_title_12">Learn to Say No</string>
+    <string name="day_description_12">Decline unimportant tasks to focus on what matters.</string>
+
+    <string name="day_title_13">Focus on One Task at a Time</string>
+    <string name="day_description_13">Avoid multitasking; complete one task at a time.</string>
+
+    <string name="day_title_14">Use Short Time Gaps Wisely</string>
+    <string name="day_description_14">Utilize waiting time for minor tasks.</string>
+
+    <string name="day_title_15">Schedule Breaks Wisely</string>
+    <string name="day_description_15">Take regular breaks to avoid burnout.</string>
+
+    <string name="day_title_16">Focus on Results, Not Time</string>
+    <string name="day_description_16">Measure productivity by results, not hours.</string>
+
+    <string name="day_title_17">Reward Yourself for Small Wins</string>
+    <string name="day_description_17">Reward yourself after completing tasks.</string>
+
+    <string name="day_title_18">Practice Positive Thinking</string>
+    <string name="day_description_18">Maintain a positive mindset to face challenges.</string>
+
+    <string name="day_title_19">Optimize Your Energy Levels</string>
+    <string name="day_description_19">Eat well and sleep enough for better performance.</string>
+
+    <string name="day_title_20">Apply the Two-Minute Rule</string>
+    <string name="day_description_20">Handle tasks under two minutes immediately.</string>
+
+    <string name="day_title_21">Practice Meditation or Mindfulness</string>
+    <string name="day_description_21">Use mindfulness to improve focus and reduce stress.</string>
+
+    <string name="day_title_22">Learn from Failures</string>
+    <string name="day_description_22">Treat failures as learning opportunities.</string>
+
+    <string name="day_title_23">Delegate When Necessary</string>
+    <string name="day_description_23">Delegate tasks to focus on what’s important.</string>
+
+    <string name="day_title_24">Review and Adjust Work Habits</string>
+    <string name="day_description_24">Assess work habits monthly for efficiency.</string>
+
+    <string name="day_title_25">Use the Eisenhower Matrix</string>
+    <string name="day_description_25">Sort tasks into four priority categories.</string>
+
+    <string name="day_title_26">Stop Chasing Perfection</string>
+    <string name="day_description_26">Finish tasks first, then refine them.</string>
+
+    <string name="day_title_27">Keep a Flexible Schedule</string>
+    <string name="day_description_27">Adapt to unexpected workload changes.</string>
+
+    <string name="day_title_28">Manage Email Effectively</string>
+    <string name="day_description_28">Check emails at specific times to stay focused.</string>
+
+    <string name="day_title_29">Incorporate Physical Activity into Your Routine</string>
+    <string name="day_description_29">Exercise to boost energy and productivity.</string>
+
+    <string name="day_title_30">Focus on Skill Development</string>
+    <string name="day_description_30">Dedicate time to learn and improve skills.</string>
+    <string name="number_of_day_1">Day 1</string>
+    <string name="number_of_day_2">Day 2</string>
+    <string name="number_of_day_3">Day 3</string>
+    <string name="number_of_day_4">Day 4</string>
+    <string name="number_of_day_5">Day 5</string>
+    <string name="number_of_day_6">Day 6</string>
+    <string name="number_of_day_7">Day 7</string>
+    <string name="number_of_day_8">Day 8</string>
+    <string name="number_of_day_9">Day 9</string>
+    <string name="number_of_day_10">Day 10</string>
+    <string name="number_of_day_11">Day 11</string>
+    <string name="number_of_day_12">Day 12</string>
+    <string name="number_of_day_13">Day 13</string>
+    <string name="number_of_day_14">Day 14</string>
+    <string name="number_of_day_15">Day 15</string>
+    <string name="number_of_day_16">Day 16</string>
+    <string name="number_of_day_17">Day 17</string>
+    <string name="number_of_day_18">Day 18</string>
+    <string name="number_of_day_19">Day 19</string>
+    <string name="number_of_day_20">Day 20</string>
+    <string name="number_of_day_21">Day 21</string>
+    <string name="number_of_day_22">Day 22</string>
+    <string name="number_of_day_23">Day 23</string>
+    <string name="number_of_day_24">Day 24</string>
+    <string name="number_of_day_25">Day 25</string>
+    <string name="number_of_day_26">Day 26</string>
+    <string name="number_of_day_27">Day 27</string>
+    <string name="number_of_day_28">Day 28</string>
+    <string name="number_of_day_29">Day 29</string>
+    <string name="number_of_day_30">Day 30</string>
+    <string name="expand_button_content_description">See more or less information about day.</string>
+</resources>
