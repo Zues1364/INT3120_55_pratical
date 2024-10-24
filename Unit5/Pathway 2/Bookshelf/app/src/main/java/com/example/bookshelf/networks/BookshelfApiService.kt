@@ -1,5 +1,6 @@
 package com.example.bookshelf.networks
 
+import Book
 import BookResponse
 
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
@@ -21,4 +22,5 @@ private val retrofit = Retrofit.Builder()
 interface BookshelfApiService {
     @GET("volumes")
     suspend fun searchBooks(@Query("q") query: String): BookResponse
+    abstract fun getBooks(query: String): List<Book>
 }
