@@ -230,12 +230,12 @@ class FlightSearchViewModel(
                     )
                 )
             } else {
-                flightSearchRepository.deleteFavourite(
-//                    Favorite(
-//                        departureCode = flight.departureAirport.iataName,
-//                        destinationCode = flight.destinationAirport.iataName
-//                    )
-                    favorite
+                flightSearchRepository.deleteFavouriteByIataCode(
+                    Favorite(
+                        departureCode = flight.departureAirport.iataName,
+                        destinationCode = flight.destinationAirport.iataName
+                    )
+                    //favorite
                 )
                 flight.favorite = false
             }

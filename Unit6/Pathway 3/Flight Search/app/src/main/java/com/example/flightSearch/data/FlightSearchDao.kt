@@ -32,6 +32,9 @@ interface AirportDao {
 
     @Query("SELECT * FROM airport WHERE name NOT LIKE :departingAirport")
     fun searchDestinationAirports(departingAirport: String): Flow<List<Airport>>
+
+    @Query("DELETE FROM favorite WHERE departure_code LIKE :departureCode AND destination_code LIKE :destinationCode")
+    suspend fun deleteFavoriteByIataCode(departureCode: String, destinationCode: String)
 }
 
 

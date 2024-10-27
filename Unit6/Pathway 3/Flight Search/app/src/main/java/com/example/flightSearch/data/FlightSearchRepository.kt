@@ -19,4 +19,6 @@ class FlightSearchRepository(private val airportDao: AirportDao) {
 
     suspend fun insertFavourite(favorite: Favorite) = airportDao.insertFavorite(favorite)
     suspend fun deleteFavourite(favorite: Favorite) = airportDao.deleteFavorite(favorite)
+
+    suspend fun deleteFavouriteByIataCode(favorite: Favorite) = airportDao.deleteFavoriteByIataCode(favorite.departureCode, favorite.destinationCode)
 }
